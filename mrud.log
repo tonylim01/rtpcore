@@ -1,0 +1,340 @@
+16:18:25.122 DEBUG [main] App                  - RTP Transfer Start !!!
+16:18:25.155 DEBUG [main] InternalLoggerFactory - Using SLF4J as the default logging framework
+16:18:25.158 DEBUG [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+16:18:25.214 DEBUG [main] NioEventLoop         - -Dio.netty.noKeySetOptimization: false
+16:18:25.214 DEBUG [main] NioEventLoop         - -Dio.netty.selectorAutoRebuildThreshold: 512
+16:18:25.244 DEBUG [main] PlatformDependent    - Platform: MacOS
+16:18:25.249 DEBUG [main] PlatformDependent0   - -Dio.netty.noUnsafe: false
+16:18:25.249 DEBUG [main] PlatformDependent0   - Java version: 9
+16:18:25.251 DEBUG [main] PlatformDependent0   - sun.misc.Unsafe.theUnsafe: available
+16:18:25.252 DEBUG [main] PlatformDependent0   - sun.misc.Unsafe.copyMemory: available
+16:18:25.252 DEBUG [main] PlatformDependent0   - java.nio.Buffer.address: available
+16:18:25.253 DEBUG [main] PlatformDependent0   - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:261) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:143) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.258 DEBUG [main] PlatformDependent0   - java.nio.Bits.unaligned: unavailable true
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:273) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:266) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:261) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:143) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.263 DEBUG [main] PlatformDependent0   - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @436bc36
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:589) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:556) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:315) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:306) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:261) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:143) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.265 DEBUG [main] PlatformDependent0   - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+16:18:25.266 DEBUG [main] PlatformDependent    - sun.misc.Unsafe: available
+16:18:25.267 DEBUG [main] PlatformDependent    - maxDirectMemory: 4294967296 bytes (maybe)
+16:18:25.268 DEBUG [main] PlatformDependent    - -Dio.netty.tmpdir: /var/folders/x4/b1fkqq3n29bbr_bp5y0_kbzh0000gn/T (java.io.tmpdir)
+16:18:25.268 DEBUG [main] PlatformDependent    - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+16:18:25.269 DEBUG [main] PlatformDependent    - -Dio.netty.noPreferDirect: false
+16:18:25.270 DEBUG [main] PlatformDependent    - -Dio.netty.maxDirectMemory: -1 bytes
+16:18:25.270 DEBUG [main] PlatformDependent    - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+16:18:25.271 DEBUG [main] CleanerJava9         - java.nio.ByteBuffer.cleaner(): available
+16:18:25.279 DEBUG [main] PlatformDependent    - org.jctools-core.MpscChunkedArrayQueue: available
+16:18:25.286 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@613a8ee1
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.288 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@2e8e8225
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.289 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@6ebf0f36
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.289 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@18920cc
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.293 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@2807bdeb
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.294 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@72c28d64
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.295 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@6492fab5
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.295 TRACE [main] NioEventLoop         - failed to instrument a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@2c5529ab
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop$5.run(NioEventLoop.java:219) ~[netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:212) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:151) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:87) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:82) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:63) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:51) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:43) [netty-all-4.1.25.Final.jar:4.1.25.Final]
+	at Process.NettyUDPServer.run(NettyUDPServer.java:36) [classes/:?]
+	at App.main(App.java:20) [classes/:?]
+16:18:25.341 DEBUG [main] DefaultChannelId     - -Dio.netty.processId: 40125 (auto-detected)
+16:18:25.344 DEBUG [main] NetUtil              - -Djava.net.preferIPv4Stack: false
+16:18:25.344 DEBUG [main] NetUtil              - -Djava.net.preferIPv6Addresses: false
+16:18:25.346 DEBUG [main] NetUtil              - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+16:18:25.348 DEBUG [main] NetUtil              - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+16:18:25.351 DEBUG [main] DefaultChannelId     - -Dio.netty.machineId: 08:6d:41:ff:fe:e6:fc:84 (auto-detected)
+16:18:25.357 DEBUG [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+16:18:25.358 DEBUG [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+16:18:25.373 DEBUG [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+16:18:25.373 DEBUG [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+16:18:25.402 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+16:18:25.402 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+16:18:25.402 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+16:18:25.402 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+16:18:25.402 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+16:18:25.402 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+16:18:25.403 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+16:18:25.403 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+16:18:25.403 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+16:18:25.403 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+16:18:25.403 DEBUG [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+16:18:25.409 DEBUG [main] ByteBufUtil          - -Dio.netty.allocator.type: pooled
+16:18:25.410 DEBUG [main] ByteBufUtil          - -Dio.netty.threadLocalDirectBufferSize: 0
+16:18:25.410 DEBUG [main] ByteBufUtil          - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+16:18:25.590 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [class core.rtp.netty.RtpInboundHandlerFsmImpl, class core.rtp.netty.RtpInboundHandlerState, class core.rtp.netty.RtpInboundHandlerEvent, interface core.rtp.netty.RtpInboundHandlerTransactionContext, [Ljava.lang.Class;@6873035]
+16:18:25.590 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.607 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ConverterProviderImpl' with args null
+16:18:25.607 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.607 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.609 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.MvelScriptManagerImpl' with args null
+16:18:25.609 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.609 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.636 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [ACTIVATED]
+16:18:25.636 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.637 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ActionsImpl' with args null
+16:18:25.637 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.637 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.637 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ActionsImpl' with args null
+16:18:25.637 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.637 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.638 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [ACTIVATED, true, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.638 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.639 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [enterActivated, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.639 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.647 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [{ACTIVATED=ACTIVATED}, INTERNAL, 1, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.648 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.648 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.TransitionImpl' with args null
+16:18:25.649 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.649 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.649 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ActionsImpl' with args null
+16:18:25.649 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.649 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.651 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [onPacketReceived, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.651 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [{ACTIVATED=ACTIVATED}, EXTERNAL, 1, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [DEACTIVATED]
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ActionsImpl' with args null
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.652 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ActionsImpl' with args null
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.TransitionImpl' with args null
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ActionsImpl' with args null
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.653 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [ACTIVATED, false, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [exitActivated, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [DEACTIVATED, true, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [enterDeactivated, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.654 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.655 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [DEACTIVATED, false, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.655 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.655 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [exitDeactivated, org.squirrelframework.foundation.fsm.impl.ExecutionContext@1db1e2c7]
+16:18:25.655 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.665 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [core.rtp.netty.RtpInboundHandlerGlobalContext@57ae2049]
+16:18:25.665 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.669 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'org.squirrelframework.foundation.fsm.impl.ActionExecutionServiceImpl' with args null
+16:18:25.669 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - getting default constructor
+16:18:25.670 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.674 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - creating new instance for class 'null' with args [{ACTIVATED=ACTIVATED, DEACTIVATED=DEACTIVATED}]
+16:18:25.674 TRACE [nioEventLoopGroup-2-1] ReflectUtils         - making constructor accessible
+16:18:25.690 DEBUG [nioEventLoopGroup-2-1] LoggingHandler       - [id: 0x9790e9b1] REGISTERED
+16:18:25.690 DEBUG [nioEventLoopGroup-2-1] LoggingHandler       - [id: 0x9790e9b1] BIND: /192.168.5.70:10240
+16:18:25.691 WARN  [nioEventLoopGroup-2-1] AbstractChannel      - A non-root user can't receive a broadcast packet if the socket is not bound to a wildcard address; binding to a non-wildcard address (/192.168.5.70:10240) anyway as requested.
+16:18:25.694 DEBUG [nioEventLoopGroup-2-1] LoggingHandler       - [id: 0x9790e9b1, L:/192.168.5.70:10240] ACTIVE
